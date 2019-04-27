@@ -760,7 +760,6 @@ PRODUCT_COPY_FILES += \
 	vendor/zte/axon7/proprietary/lib64/vendor.qti.gnss@1.2.so:/system/lib64/vendor.qti.gnss@1.2.so \
 	vendor/zte/axon7/proprietary/lib64/vendor.qti.gnss@2.0.so:/system/lib64/vendor.qti.gnss@2.0.so \
 	vendor/zte/axon7/proprietary/lib64/vendor.qti.gnss@2.1.so:/system/lib64/vendor.qti.gnss@2.1.so \
-	vendor/zte/axon7/proprietary/priv-app/com.qualcomm.location/:/system/priv-app/com.qualcomm.location/ \
 	vendor/zte/axon7/proprietary/vendor/bin/hw/vendor.qti.gnss@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.gnss@2.0-service \
 	vendor/zte/axon7/proprietary/vendor/bin/slim_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/slim_daemon \
 	vendor/zte/axon7/proprietary/vendor/etc/init/vendor.qti.gnss@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.gnss@2.0-service.rc \
