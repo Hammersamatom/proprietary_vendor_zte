@@ -320,7 +320,17 @@ PRODUCT_COPY_FILES += \
     vendor/zte/axon7/proprietary/vendor/lib64/hw/gxfingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gxfingerprint.default.so \
     vendor/zte/axon7/proprietary/vendor/lib64/libfp_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfp_client.so \
     vendor/zte/axon7/proprietary/vendor/lib64/libfpnav.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfpnav.so \
-    vendor/zte/axon7/proprietary/vendor/lib64/libfpservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfpservice.so
+    vendor/zte/axon7/proprietary/vendor/lib64/libfpservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfpservice.so \
+	vendor/zte/axon7/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
+	vendor/zte/axon7/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so \
+	vendor/zte/axon7/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+	vendor/zte/axon7/proprietary/vendor/lib/libmmosal_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmosal_proprietary.so \
+	vendor/zte/axon7/proprietary/vendor/lib/libwfdcommonutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcommonutils_proprietary.so \
+	vendor/zte/axon7/proprietary/vendor/lib/libwfdhaldsmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhaldsmanager.so \
+	vendor/zte/axon7/proprietary/vendor/lib/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhdcpcp.so \
+	vendor/zte/axon7/proprietary/vendor/lib/libwfdmmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmmservice.so \
+	vendor/zte/axon7/proprietary/vendor/lib/libwfdmodulehdcpsession.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmodulehdcpsession.so \
+    vendor/zte/axon7/proprietary/vendor/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice 
 
 ifeq ($(QCPATH),)
 PRODUCT_COPY_FILES += \
@@ -770,6 +780,37 @@ PRODUCT_COPY_FILES += \
 	vendor/zte/axon7/proprietary/vendor/lib64/vendor.qti.gnss@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@1.1.so \
 	vendor/zte/axon7/proprietary/vendor/lib64/vendor.qti.gnss@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@1.2.so \
 	vendor/zte/axon7/proprietary/vendor/lib64/vendor.qti.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@2.0.so \
+   	vendor/zte/axon7/proprietary/etc/wfdconfig.xml:system/etc/wfdconfig.xml \
+	vendor/zte/axon7/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
+	vendor/zte/axon7/proprietary/framework/WfdCommon.jar:system/framework/WfdCommon.jar \
+	vendor/zte/axon7/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+	vendor/zte/axon7/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
+	vendor/zte/axon7/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
+	vendor/zte/axon7/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
+	vendor/zte/axon7/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
+	vendor/zte/axon7/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
+	vendor/zte/axon7/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
+	vendor/zte/axon7/proprietary/lib/libwfdavenhancements.so:system/lib/libwfdavenhancements.so \
+	vendor/zte/axon7/proprietary/lib/libwfdclient.so:system/lib/libwfdclient.so \
+	vendor/zte/axon7/proprietary/lib/libwfdcodecv4l2.so:system/lib/libwfdcodecv4l2.so \
+	vendor/zte/axon7/proprietary/lib/libwfdcommonutils.so:system/lib/libwfdcommonutils.so \
+	vendor/zte/axon7/proprietary/lib/libwfdconfigutils.so:system/lib/libwfdconfigutils.so \
+	vendor/zte/axon7/proprietary/lib/libwfdmminterface.so:system/lib/libwfdmminterface.so \
+	vendor/zte/axon7/proprietary/lib/libwfdmmsink.so:system/lib/libwfdmmsink.so \
+	vendor/zte/axon7/proprietary/lib/libwfdmmsrc.so:system/lib/libwfdmmsrc.so \
+	vendor/zte/axon7/proprietary/lib/libwfdnative.so:system/lib/libwfdnative.so \
+	vendor/zte/axon7/proprietary/lib/libwfdrtsp.so:system/lib/libwfdrtsp.so \
+	vendor/zte/axon7/proprietary/lib/libwfdservice.so:system/lib/libwfdservice.so \
+	vendor/zte/axon7/proprietary/lib/libwfdsm.so:system/lib/libwfdsm.so \
+	vendor/zte/axon7/proprietary/lib/libwfduibcinterface.so:system/lib/libwfduibcinterface.so \
+	vendor/zte/axon7/proprietary/lib/libwfduibcsink.so:system/lib/libwfduibcsink.so \
+	vendor/zte/axon7/proprietary/lib/libwfduibcsinkinterface.so:system/lib/libwfduibcsinkinterface.so \
+	vendor/zte/axon7/proprietary/lib/libwfduibcsrc.so:system/lib/libwfduibcsrc.so \
+	vendor/zte/axon7/proprietary/lib/libwfduibcsrcinterface.so:system/lib/libwfduibcsrcinterface.so \
+	vendor/zte/axon7/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
+	vendor/zte/axon7/proprietary/lib64/libwfdclient.so:system/lib64/libwfdclient.so \
+	vendor/zte/axon7/proprietary/lib64/libwfdnative.so:system/lib64/libwfdnative.so \
+    
     
 
 PRODUCT_PACKAGES += \
